@@ -1,0 +1,2 @@
+- name: Print hello world
+  shell: echo "Hello World from {{ location }}"

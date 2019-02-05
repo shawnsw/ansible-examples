@@ -1,0 +1,4 @@
+- name: Create a hello world file
+  copy: 
+    content: "hello world from {{ location }}\n" 
+    dest: /tmp/helloworld.txt

@@ -1,0 +1,13 @@
+---
+- name: Hello world exmaple
+  hosts: all
+  vars_files: 
+    - vars/hello-world.yml
+  tasks:
+  - name: Print hello world
+    shell: echo "Hello World from {{ location }}"
+
+  - name: Create a hello world file
+    copy: 
+      content: "hello world from {{ location }}\n" 
+      dest: /tmp/helloworld.txt

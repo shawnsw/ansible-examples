@@ -1,0 +1,10 @@
+---
+- name: "Hello World role example"
+  hosts: all
+  become: false
+  gather_facts: no
+  vars_files: 
+    - vars/hello-world.yml
+
+  roles:
+    - hello-world
