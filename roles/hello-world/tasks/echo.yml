@@ -1,2 +1,7 @@
 - name: Print hello world
   shell: echo "Hello World from {{ location }}"
+  register: std_out
+
+- name: print out standard output
+  debug:
+    var: std_out.stdout_lines
